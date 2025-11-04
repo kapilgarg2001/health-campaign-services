@@ -260,7 +260,7 @@ public class CommonUtils {
     @Deprecated
     public static <T> void checkRowVersion(Map<String, T> idToObjMap, List<T> objList) {
         Class<?> objClass = getObjClass(objList);
-        checkRowVersion(idToObjMap, objList, getMethod("getId", objClass));
+//        checkRowVersion(idToObjMap, objList, getMethod("getId", objClass));
     }
 
     //TODO To be removed as it is only used by Product service which is now depricated
